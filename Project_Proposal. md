@@ -1,0 +1,54 @@
+Final Project Proposal
+Leading Question
+Your final project should have a clear conclusion or target goal – given a dataset and a code base that implements some graph algorithms, what can you learn from the dataset?
+
+We decide to use the ‘Amazon networks’ dataset provided by the stanford large network dataset collections. From this dataset we can know people’s shopping habits, based on that, we can provide a tailored shopping list to customers. 
+
+Are you hoping to solve a specific problem? 
+
+We hope to give a proper suggestion to customers based on their previous shopping records so the customers can enjoy their shopping. 
+
+Are you hoping to produce a general search tool?
+Yes
+ 
+Dataset Acquisition and Processing
+Your final project must use at least one publicly accessible dataset and your proposal must clearly describe what dataset you have chosen to use.
+We choose to use the ‘Amazon networks’ dataset provided by the stanford large network dataset collections. This dataset describes a series of products where these products are the nodes and the links between them represent that they are usually co-purchased.
+As part of this description, you must state how you will download, store, and process your data. This includes succinctly describing the data format and clearly identifying how the data will be used in your proposed graph data structures. Be advised that real world data is often messy and your proposed datasets may have errors or missing entries. 
+
+We will download the dataset directly from the SNAP website and store it locally first; when we finish designing the algorithm, we will use the dataset to test it and then upload the result to github. For the processing of the dataset, we will first use the provided readtofile code to convert the data from .txt format to string. Then we will use these strings to test our algorithms when we test our codes. 
+
+Your proposal should also briefly describe how your group will handle these potential errors.
+
+The dataset may miss some of the data or have duplicated data. Since our dataset only has two columns of data, we can traverse the dataset first before testing and remove the rows with missing data. Also, we think we don’t have to worry too much about the potential errors in the dataset because the provided dataset is quite clean and straightforward.
+
+Graph Algorithms
+Your final project must implement at least two graph data structures as well as a graph traversal from the list of example goals or you must propose an algorithm or set of graph algorithms that represent an equivalent amount of coding development.Accordingly, your proposal should clearly state what algorithms you will complete by the project end.
+
+We will use graphs,vectors and maybe hash tables as our data structures. For the algorithm, we decided to use BFS traversal, Dijkstra’s Algorithm and strongly connected components. 
+
+When describing your choices, be sure to include the following
+What are the inputs you expect each method to take in?
+
+We expect each method to take in the unique item id as the inputs.
+
+What output are you expecting for each method?
+
+We expect each method can give us a list of item ids that has relations to the input item id.
+
+If there are multiple ways to implement an algorithm, what is your target big O or efficiency benchmark?
+
+If we encounter several ways to implement an algorithm, our target big O for all three algorithms would be O(n).
+
+Timeline
+As a team, identify a list of tasks such as data acquisition, data processing, completion of each individual algorithm, production of final deliverables, etc… and write a proposed timeline for the completion of these tasks. You are not required to adhere strictly to this timeline but it should represent a reasonable set of benchmarks to strive for. For example, stating that you will finish all graph algorithms over the span of a single week is not reasonable. You will be expected to accomplish at least some of these tasks by the mid-project check-in.
+
+Our time line for the completion of the project is as follows.
+Week of April 05: download the data and try to convert that to types such as strings so we can use it.
+Week of April 12: build the graph data structure and try to complete the traversal algorithm.
+Week of April 19: mid-check point demo to demo the traversal algorithm. Also try to develop the other data structure and the Dijkstra’s Algorithm.
+Week of April 26: continue developing Dijkstra’s Algorithm, try to begin developing the strongly connected components algorithm. 
+Week of May 3: finish all the design of the project and begin working on final project report and video recording. 
+Week of May 10: save for unexpected changes.
+
+Mianfeng Liu mliu48
